@@ -1,0 +1,42 @@
+.footer--principal {
+    display: flex;
+    height: 160px;
+    background-color: $color-primario;
+    padding: 0 25px 0 25px;
+    .nav--footer {
+        display: flex;
+		width: 50%;
+        ul {
+			width: 100%;
+			list-style: none;
+			display: flex;
+			justify-content: space-between;
+            margin-top: 40px;
+			@include titulos($Fuente2);
+			li a:hover{
+				text-decoration: none;
+			}
+		}
+    }
+    .nav--social {
+        display: flex;
+        width: 50%;
+        ul {
+            width: 80%;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            @include titulos($Fuente2);
+            li a:hover{
+                text-decoration: none;
+            }
+		}
+    }
+    li {
+        color: $color-claro;
+        a {
+            color: $color-claro;
+        }
+    }
+}

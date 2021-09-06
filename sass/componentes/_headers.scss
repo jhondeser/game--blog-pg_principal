@@ -1,0 +1,35 @@
+.header--principal {
+	display: flex;
+	width: 100%;
+	height: 90px;
+	border-bottom: 1px  solid #ebebeb;
+	justify-content: space-between;
+	padding: 0 25px 0 25px;
+	.nav--header{
+		display: flex;
+		width: 50%;
+		align-items: center;
+		ul {
+			width: 80%;
+			list-style: none;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			@include titulos($Fuente2);
+			li a:hover{
+				text-decoration: none;
+			}
+		}
+	}
+	.header__busqueda {
+		display: flex;
+		width: 7%;
+		justify-content: space-around;
+		align-items: center;
+		padding-bottom: 16px;
+		@include titulos($Fuente2);
+		i {
+			color: $color-secundario;
+		}
+	}
+}
